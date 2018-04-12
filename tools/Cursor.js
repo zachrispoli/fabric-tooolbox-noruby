@@ -20,6 +20,9 @@
         },
         onSelected : function (e) {
             e.fabric.selection = true;
+            e.fabric.forEachObject(function(o) {
+                o.selectable = true;
+            });
         },
         onDeselected : function (e) {
 
