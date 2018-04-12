@@ -24,7 +24,7 @@
                     width: pointer.x-origX,
                     height: pointer.y-origY,
                     angle: 0,
-                    fill: 'rgba(255,0,0,0.5)',
+                    fill: e.options.fillColor,
                     transparentCorners: false
                 });
                 e.fabric.add(rect);
@@ -37,7 +37,7 @@
                     width: pointer.x-origX,
                     height: pointer.y-origY,
                     angle: 0,
-                    fill: 'rgba(255,0,0,0.5)',
+                    fill: e.options.fillColor,
                     transparentCorners: false
                 });
                 e.fabric.add(ellipse);
