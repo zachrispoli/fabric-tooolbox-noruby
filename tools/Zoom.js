@@ -24,8 +24,15 @@
 
         },
         onScroll : function (e) {
-            console.log('onScroll')
+            
         },
+        onKeyPress : function (e) {
+            if(e.key === '=') {
+                e.fabric
+            } else if(e.key === '-') {
+
+            }
+        }
     });
 
 })();
