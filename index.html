@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Paper.js Toolbox Example</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/basic-toolbox.css">
+
+    <script src="lib/fabric.min.js"></script>
+    <script src="lib/paper-toolbox.js"></script>
+    <script src="tools/Cursor.js"></script>
+    <script src="tools/Pencil.js"></script>
+    <script src="tools/Shapes.js"></script>
+    <script src="tools/Text.js"></script>
+    <script src="tools/Pan.js"></script>
+    <script src="tools/Zoom.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        window.onload = function () {
+            app = new App();
+        }
+    </script>
+
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="paper-canvas"></canvas>
+</body>
+</html>
