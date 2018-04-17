@@ -13,7 +13,6 @@
             var pointer = e.fabric.getPointer(e.e);
             origX = pointer.x;
             origY = pointer.y;
-            var pointer = e.fabric.getPointer(e.e);
 
             if(e.options.shapeMode === 'rect') {
                 rect = new fabric.Rect({

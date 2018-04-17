@@ -1,5 +1,8 @@
 (function () {
 
+    var zoomLevel = 0;
+    var zoomAmount = 0.25;
+
     window.ZoomTool = new PaperToolbox.Tool({
         global: true,
         onMouseDown : function (e) {
@@ -28,10 +31,12 @@
         },
         onKeyPress : function (e) {
             if(e.key === '=') {
-                e.fabric
+                zoomLevel += zoomAmount;
             } else if(e.key === '-') {
-
+                zoomLevel -= zoomAmount;
             }
+
+            e.fabric.zoomToPoint(new fabric.Point(0,0), Math.pow(2, zoomLevel));
         }
     });
 

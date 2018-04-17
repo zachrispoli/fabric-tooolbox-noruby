@@ -24,6 +24,7 @@ App = function () {
     paperToolbox.addTool(ShapesTool)
     paperToolbox.addTool(PanTool)
     paperToolbox.addTool(ZoomTool)
+    paperToolbox.addTool(CommentTool)
 
     window.addEventListener('resize', function () {
         fabricCanvas.lowerCanvasEl.style.width  = window.innerWidth+'px';
